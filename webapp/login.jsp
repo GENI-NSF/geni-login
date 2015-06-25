@@ -1,21 +1,17 @@
 <%@ taglib uri="urn:mace:shibboleth:2.0:idp:ui" prefix="idpui" %>
 <html>
   <head>
-    <title>Shibboleth Identity Provider - Example Login Page</title>
+    <title>GENI Project Office Identity Provider - Login Page</title>
     <link rel="stylesheet" type="text/css" href="<%= request.getContextPath()%>/login.css"/>
   </head>
 
   <body id="homepage">
-    <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
-    <h1>Example Login Page</h1>
-    <p>This login page is an example and should be customized.  Refer to the 
-       <a href="https://wiki.shibboleth.net/confluence/display/SHIB2/IdPAuthUserPassLoginPage" target="_blank"> documentation</a>.
-    </p>
-
+    <img src="<%= request.getContextPath()%>/images/geni.png" alt="GENI Logo"/>
+    <h1>GENI Project Office Login</h1>
     <div class="loginbox">
        <div class="leftpane">
          <div class="content">
-           <p>The web site described to the right has asked you to log in and you have chosen &lt;FILL IN YOUR SITE&gt; as your home institution.</p>
+           <p>The web site described to the right has asked you to log in and you have chosen the GENI Project Office as your home institution.</p>
            <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
               <p><font color="red"> Credentials not recognized. </font> </p>
            <% } %>
@@ -28,6 +24,9 @@
              <tr><td width="40%"><label for="username">Username:</label></td><td><input name="j_username" type="text" id="username" autocapitalize="off" /></td></tr>
              <tr><td><label for="password">Password:</label></td><td><input name="j_password" type="password" id="password" /></td></tr>
              <tr><td></td><td><button type="submit" value="Login" >Continue</button></td></tr>
+	     <tr><td><a href="https://shib-idp.geni.net/geni/reset.html">Reset password</a></td><td></td></tr>
+	     <tr><td><a href="https://shib-idp.geni.net/geni/request.html">Request account</a></td><td></td></tr>
+	     <tr><td><a href="mailto:help@geni.net">Need help?</a></td><td></td></tr>
            </table></form>
          </div>
        </div>
@@ -50,5 +49,12 @@
          </div>
       </div>
     </div>
+<div id="footer">
+<div id="footer-right">
+  Copyright &copy; 2014 Raytheon BBN Technologies<br>
+  All Rights Reserved - NSF Award CNS-0714770<br>
+  <a href="http://www.geni.net/">GENI</a> is sponsored by the <a href="http://www.nsf.gov/">National Science Foundation</a>
+</div>
+</div>
   </body>
 </html>
