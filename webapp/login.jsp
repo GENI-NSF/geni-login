@@ -33,9 +33,9 @@
         <a href="mailto:help@geni.net">Need help?</a>
     </div>
     <div id="footer">
-    <p style="font-size: .8em;">
-    <a href="http://www.geni.net/">GENI</a> is sponsored by the
-    <a href="http://www.nsf.gov/"><img src="<%= request.getContextPath()%>/images/nsf1.gif" alt="NSF Logo" height="16" width="16"/> National Science Foundation</a><br>
+    <p style="font-size: .9em;">
+    <a href="http://www.geni.net/" target="_blank">GENI</a> is sponsored by the
+    <a href="http://www.nsf.gov/" target="_blank"><img src="<%= request.getContextPath()%>/images/nsf1.gif" alt="NSF Logo" height="16" width="16"/> National Science Foundation</a><br>
     NSF Award CNS-0714770</p>
     </div>
   </body>
