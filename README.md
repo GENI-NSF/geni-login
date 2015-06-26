@@ -35,7 +35,7 @@ Copy the code in the webapp directory of this repository into the
 shbboleth directory:
 
 ```
-cp -r webapp shibboleth-identityprovider-2.3.6/src/main/webapp
+cp -r webapp shibboleth-identityprovider-2.3.6/src/main
 ```
 
 Install the identity provider. It should detect the existing config files
