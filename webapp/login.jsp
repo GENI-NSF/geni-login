@@ -10,7 +10,7 @@
 
   <body>
     <div id="loginArea">
-      <img style="height: 100px;" src="<%= request.getContextPath()%>/images/logo.png" alt='Geni logo'/>
+      <img style="height: 100px;" src="<%= request.getContextPath()%>/images/geni.png" alt='Geni logo'/>
       <h3>GENI Project Office Login</h3>
       <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
          <p style="color:red"> Credentials not recognized. </font> </p>
@@ -29,7 +29,8 @@
         <button type="submit" value="Login" >Login</button><br>
       </form>
         <a href="https://shib-idp.geni.net/geni/reset.html">Reset password</a><br>
-        <a href="https://shib-idp.geni.net/geni/request.html">Request account</a>
+        <a href="https://shib-idp.geni.net/geni/request.html">Request account</a><br>
+        <a href="mailto:help@geni.net">Need help?</a>
     </div>
     <div id="footer">
     <p style="font-size: .8em;">
