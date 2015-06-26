@@ -42,7 +42,8 @@ Install the identity provider. It should detect the existing config files
 and ask if you want to overwrite them. Answer "no".
 
 ```
-shibboleth-identityprovider-2.3.6/install.sh
+cd shibboleth-identityprovider-2.3.6
+sudo ./install.sh
 ```
 
 Restart tomcat (or whatever container you are using):
