@@ -43,8 +43,7 @@ and ask if you want to overwrite them. Answer "no".
 
 ```
 cd shibboleth-identityprovider-2.3.6
-export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-i386
-sudo ./install.sh
+sudo JAVA_HOME=/usr/lib/jvm/java-6-openjdk-i386 ./install.sh
 ```
 
 Restart tomcat (or whatever container you are using):
