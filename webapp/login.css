@@ -1,109 +1,76 @@
-div.loginbox {
-    background-color: #FFFFFF;
-    position: relative;
-    width: 840px;
-    height: 300px;
-}
-
-div.loginbox div.leftpane {
-    border: 2px #e17000  solid;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 47%;
-    /* height: 90%; */
-}
-
-div.loginbox div.rightpane {
-	border: 2px #e17000  solid;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 47%;
-    /* height: 90%; */
-    overflow: hidden;
+body {
     text-align: center;
+    font-family: 'Open Sans';
+    background-color: #C8DBE5;
 }
 
-div.loginbox div.content{
-    padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
-    margin:auto;
+#userpass {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
 }
 
-div.loginbox #splogo{
-}
-
-
-div.loginbox #clippedsplogoX {
-    width: 350px;
-}
-
-div.loginbox #clippedsplogoY {
-    height: 147px;
-}
-
-div.loginbox #spName{
-    padding-top:5px;
-    padding-bottom:5px;
-    font-size:1.2em;
-}
-
-div.loginbox #spDescription{
-    padding-top:15px;
-    text-align:left;
-}
-
-/*
-div.loginbox button, div {
-	height: 46px;
-	width: 80%;
-}
-*/
-
-/*
-  FOOTER CONTAINER from Portal code
-*/
+#loginArea {
+    width: 35%;
+    min-width: 400px;
+    max-width: 500px;
+    border: 8px #5F584E solid;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0.2em 0.2em 0.4em #dddddd;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}    
 
 #footer {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left:62px;
-  padding-right:31px;
-    /* center */
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    width: 807px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  /* by default, let text be serif */
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  box-shadow: 0px 0px 10px #5F584E;
-  background-color: #5F584E;
-  color: #ffffff;
-  overflow: auto;
+    width: 35%;
+    min-width: 416px;
+    max-width: 566px;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #5F584E; 
+    margin: 0 auto 20px auto;
 }
 
 #footer a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 700;
+    color: white;
 }
 
-#footer-left {
-  float: left;
-  text-align: left;
-  width: 400px;
-  font-size: 0.9em;
+@media (max-width: 400px) {
+    #loginArea {
+        margin: 0px auto;
+        width: 80%;
+        min-width: 0;
+    }
+
+    #footer {
+        margin: 10px auto 0px auto;
+        width: 80%;
+        min-width: 0;
+    }
 }
 
-#footer-right {
-  float: right;
-  text-align: right;
-  width: 400px;
-  font-size: 0.8em;
-  border-right: 2px solid #ffffff;
-  padding-right: 15px;
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em 0.2em #dddddd;
+  color: #F57F21; /* official GENI orange */
+}
+
+button {
+    -webkit-appearance:none;
+    outline: none; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
+    padding: 5px 10px;
+    color: white !important;
+    background-color: #F57F21;
+    box-shadow: 0px 0px 5px #5F584E;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    margin: 20px auto;
+    cursor: pointer;
 }
