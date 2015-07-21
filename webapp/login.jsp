@@ -11,7 +11,7 @@
   <body>
     <div id="loginArea">
       <img style="height: 100px;" src="<%= request.getContextPath()%>/images/geni.png" alt='Geni logo'/>
-      <h3>GENI Project Office Login</h3>
+      <h2>GENI Project Office Login</h2>
       <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
          <p style="color:red"> Credentials not recognized. </font> </p>
       <% } %>
