@@ -29,6 +29,7 @@
         <button type="submit" value="Login" >Login</button><br>
       </form>
         <a href="https://shib-idp.geni.net/geni/reset.html">Reset password</a><br>
+        <a href="https://shib-idp.geni.net/geni/usernamerecover.html">Recover username</a><br>
         <a href="https://shib-idp.geni.net/geni/request.html">Request account</a><br>
         <a href="mailto:help@geni.net">Need help?</a>
     </div>
